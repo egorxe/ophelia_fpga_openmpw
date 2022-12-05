@@ -351,6 +351,7 @@ module fpga_logic_cell(\config_i.lut_config , \config_i.mux_config , clk_i, glb_
   wire _5_;
   wire _6_;
   wire _7_;
+  wire _8_;
   input clk_i;
   wire clk_i;
   input [15:0] \config_i.lut_config ;
@@ -367,7 +368,8 @@ module fpga_logic_cell(\config_i.lut_config , \config_i.mux_config , clk_i, glb_
   wire lut_out;
   wire register_out;
   assign _6_ = ~ \config_i.mux_config ;
-  assign _7_ = _6_ ? lut_out : register_out;
+  assign _7_ = _6_ & glb_rstn_i;
+  assign _8_ = _7_ ? lut_out : register_out;
   fpga_tech_register cell_reg (
     .clk_i(clk_i),
     .config_i_rst_polarity(1'h0),
@@ -401,7 +403,7 @@ module fpga_logic_cell(\config_i.lut_config , \config_i.mux_config , clk_i, glb_
   assign lut_out = _4_;
   assign register_out = _5_;
   assign logic_in_buf = { _3_, _2_, _1_, _0_ };
-  assign logic_o = _7_;
+  assign logic_o = _8_;
 endmodule
 
 module fpga_lut_1(glb_rstn_i, config_i, logic_i, logic_o);

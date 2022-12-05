@@ -2,8 +2,9 @@ set ::env(DESIGN_IS_CORE) 0
 set ::env(SYNTH_STRATEGY) "AREA 3"
 set ::env(CLOCK_PERIOD) 100
 set ::env(CLOCK_PORT) "clk_i config_clk_i"
-set ::env(FP_CORE_UTIL) 59
-set ::env(PL_TARGET_DENSITY) 0.7
+set ::env(FP_SIZING) "absolute"
+set ::env(DIE_AREA) "0 0 250 310"
+set ::env(PL_TARGET_DENSITY) 0.72
 set ::env(SYNTH_TIMING_DERATE) 0.07
 set ::env(PL_TIME_DRIVEN) 1
 set ::env(PL_ROUTABILITY_DRIVEN) 1
