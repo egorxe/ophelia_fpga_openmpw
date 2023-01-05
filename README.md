@@ -8,7 +8,7 @@ Ophelia is a test project implementing open-source Uranus eFPGA fabric for OpenM
 
 ## Project implementation
 
-Project is implemented for Skywater 130nm ASIC technology using OpenLane open source flow. Synthesis is done in two steps: first Yosys+GHDL are used for VHDL to Verilog translation, and then resulting Verilog source is synthesized by Yosys inside OpenLane flow. 
+Project is implemented for GlobalFoundries 180nm ASIC technology using OpenLane open source flow. Synthesis is done in two steps: first Yosys+GHDL are used for VHDL to Verilog translation, and then resulting Verilog source is synthesized by Yosys inside OpenLane flow. 
 
 ## FPGA flow
 
@@ -16,7 +16,7 @@ Uranus FPGA uses opensource flow for FPGA bitstream generation. Yosys (with opti
 
 ## Sources
 
-This repository contains mainly implementation products (GDS/netlists/etc) needed for OpenMPW and test Caravel programs. VHDL sources of Uranus FPGA fabric, FPGA flow, tests and simulation scripts are stored in [main Uranus repository](https://github.com/egorxe/uranus_fpga).
+This repository contains mainly implementation products (GDS/netlists/etc) needed for OpenMPW and test Caravel programs. VHDL sources of Uranus FPGA fabric, FPGA flow, tests and simulation scripts are stored in [main Uranus repository](https://github.com/egorxe/uranus_fpga). eFuse compiler resides in it's own [repository](https://github.com/egorxe/gf180_efuse_compiler).
 
 ## Documentation
 
