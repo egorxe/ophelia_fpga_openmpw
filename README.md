@@ -4,7 +4,7 @@
 
 ## General description
 
-Ophelia is a test project implementing open-source Uranus eFPGA fabric for OpenMPW-GF0 using open source GF180 PDK and OpenLane flow. FPGA contains 112 4-input LUTs and uses Wishbone bus from Caravel test harness for bitstream loading. Project also contains eFuse array for nonvolatile FPGA config storage.
+Ophelia is a test project implementing open-source Uranus eFPGA fabric for OpenMPW-GF0 using open source GF180 PDK and OpenLane flow. FPGA contains 112 4-input LUTs and uses Wishbone bus from Caravel test harness for bitstream loading. Project also contains eFuse array for nonvolatile FPGA config storage compiled with [this compiler](https://github.com/egorxe/gf180_efuse_compiler).
 
 ## Project implementation
 
